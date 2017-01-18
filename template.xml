@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tt xml:lang='en' xmlns='http://www.w3.org/2006/10/ttaf1' xmlns:tts='http://www.w3.org/2006/10/ttaf1#style'>
+<head></head>
+<body>
+    <div xml:id="captions">
+        {{#each lines}}
+        <p begin="{{ begin }}" end="{{ end }}">{{{ content }}}</p>
+        {{/each}}
+    </div>
+</body>
+</tt>
