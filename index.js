@@ -31,7 +31,7 @@ function convert(file) {
     content.pop();
     content.pop();
 
-    content = content.join('\n').replace('\n', '<br />');
+    content = content.join('\n').replace('\n', '<br />').replace(/&/gm, '&amp;');
 
     return {
       begin,
